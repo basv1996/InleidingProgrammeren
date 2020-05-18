@@ -1,0 +1,26 @@
+#container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background-color: yellow;
+    margin: 0 auto;
+    cursor: url("../img/sniper.png") 25 25, auto;
+}
+
+#enemY {
+    position: relative;
+    width: 44px;
+    height: 59px;
+    background: url(../img/ghost.svg);
+}
+
+.gone {
+display: none;
+}
+
+.rood {
+    background-color: red !important;}
+/*Ik heb important toegevoegd anders wordt de container background-color niet overschreven i.v.m. dat de container is aangeduid met een ID en de en de background rood met een class. Een ID heeft een hogere waarde dan een class namelijk. */
+
+.groen {
+    background-color: green !important;}
