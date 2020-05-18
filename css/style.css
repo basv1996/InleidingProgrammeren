@@ -2,25 +2,45 @@
   width: 400px;
   height: 400px;
   position: absolute;
-  background-color: yellow;
+  background: yellow;
     margin: 0 auto;
     cursor: url("../img/sniper.png") 25 25, auto;
 }
 
 #enemY {
     position: relative;
-    width: 44px;
-    height: 59px;
-    background: url(../img/ghost.svg);
+    width: 40px;
+    height: 60px;
 }
 
 .gone {
 display: none;
 }
 
-.rood {
-    background-color: red !important;}
-/*Ik heb important toegevoegd anders wordt de container background-color niet overschreven i.v.m. dat de container is aangeduid met een ID en de en de background rood met een class. Een ID heeft een hogere waarde dan een class namelijk. */
+#nextlevel {
+    position: relative;
+    left: -200%;
+    width: 200px;
+    height: 30vh;
+    background-color: red;
+    animation: levelMsg 3s linear 0s 1 normal;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.groen {
-    background-color: green !important;}
+#nextlevel #nextlevelmsg {
+    text-align: center;
+margin: 0 auto;
+color: blue;
+font-weight: 700;
+font-style: italic;
+font-size: 2.5em;}
+
+@keyframes levelMsg {
+    0% {left:-100%; top: 0px;width: 40vw;}
+    25% {left: -50%; top: 0px; width: 30vw;}
+    50% {left: 0; top: 0px; width: 25vw;}
+    75% {left: 200px; top: 0px; right: 0; width: 15vw;}
+    100% {left: 400px; right: 0; top: 10px; width: 0vw;}
+}
