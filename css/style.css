@@ -17,6 +17,11 @@
 display: none;
 }
 
+.difficultSelected {
+background-color: orange;
+border: 2px solid black;
+}
+
 #nextlevel {
     position: relative;
     left: -200%;
